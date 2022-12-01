@@ -1,3 +1,6 @@
+# *DO NOT EDIT THIS REPO*
+# *CLONE AND EDIT IN YOUR REPO*
+
 <br />
   <h1 align="center">Chat-app 🦜</h1>
 
@@ -36,30 +39,33 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-You need to have npm installed.
+yarnが必要です(npm不可)
 
-- npm
+- yarn
   ```sh
-  npm install npm@latest -g
+  volta install yarn@latest
   ```
+
+  [How to install Volta](https://github.com/NT25-Graduation-Work/how-to/wiki/Node.js)
 
 ### Installation
 
-1. Clone the repo
+1. リポジトリをclone
    ```sh
-   git clone https://github.com/lucasmrl/chat-app.git
+   git clone https://github.com/(your username)/chat-app-server.git
    ```
-2. From the root, install NPM packages
+2. [リポジトリ直下](./)で依存関係をインストール
    ```sh
-   npm install
+   cd chat-app-server
+   yarn
    ```
-3. From the CLIENT directory, install NPM packages
+3. クライアントを取得し、依存関係をインストール
    ```sh
-   npm install
+   yarn run get-client
    ```
-4. Run the project using this command:
+4. 開発環境を起動(クライアントとサーバー両方):
    ```sh
-   npm run dev
+   yarn run dev
    ```
 
 ### Deploy (Example using Heroku)
